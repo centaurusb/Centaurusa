@@ -1,1 +1,1 @@
-It is a project of demo.
+It is a android project of demo.
