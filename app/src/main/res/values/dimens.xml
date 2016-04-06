@@ -3,4 +3,11 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="edit_note_layout_margin">12dp</dimen>
+    <dimen name="edit_text_margin_top">12dp</dimen>
+    <dimen name="edit_text_line_margin">24dp</dimen>
+    <dimen name="dis_between_text_and_line">14dp</dimen>
+    <dimen name="edit_text_paint_stroke_width">2px</dimen>
+    <dimen name="content_text_size">17sp</dimen>
 </resources>
