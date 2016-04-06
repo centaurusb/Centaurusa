@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/edit_note_layout_margin"
+    android:paddingRight="@dimen/edit_note_layout_margin"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.centaurusa.www.centaurusa.widget.NoteEditText
+            android:id="@+id/content_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.0"
+            android:layout_marginTop="@dimen/edit_text_margin_top"
+            android:lineSpacingExtra="@dimen/edit_text_line_margin"
+            android:background="@null"
+            android:textColorHint="@color/edit_text_content_hint_text_color"
+            android:textSize="@dimen/content_text_size"
+            android:textColor="@color/edit_text_content_text_color"
+            android:hint="@string/edit_text_hint"
+            android:inputType="textMultiLine"
+            android:gravity="left|top"
+            android:minLines="10" />
+
+    </ScrollView>
+
+</LinearLayout>

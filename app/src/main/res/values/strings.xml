@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Centaurusa</string>
     <string name="action_settings">Settings</string>
+
+    <string name="write_note">写便签</string>
+    <string name="edit_text_hint">"请输入您要写的内容"</string>
 </resources>
