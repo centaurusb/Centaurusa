@@ -1,5 +1,6 @@
-package com.centaurusa.www.centaurusa;
+package com.centaurusa;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -10,6 +11,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+
+import com.centaurusa.www.centaurusa.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -66,5 +69,18 @@ public class MainActivity extends AppCompatActivity {
     private void editNote(){
         Intent intent = new Intent(this, EditNoteActivity.class);
         startActivity(intent);
+    }
+
+    /**
+     * Created by Administrator on 2016/4/6.
+     */
+    public static class EditNoteActivity extends Activity {
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.edit_note);
+
+        }
     }
 }

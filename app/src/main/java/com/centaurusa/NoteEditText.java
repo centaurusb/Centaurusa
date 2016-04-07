@@ -1,4 +1,4 @@
-package com.centaurusa.www.centaurusa.widget;
+package com.centaurusa;
 
 import android.content.Context;
 import android.content.res.Resources;

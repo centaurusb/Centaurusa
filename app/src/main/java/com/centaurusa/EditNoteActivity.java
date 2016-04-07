@@ -1,7 +1,9 @@
-package com.centaurusa.www.centaurusa;
+package com.centaurusa;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.centaurusa.www.centaurusa.R;
 
 /**
  * Created by Administrator on 2016/4/6.
