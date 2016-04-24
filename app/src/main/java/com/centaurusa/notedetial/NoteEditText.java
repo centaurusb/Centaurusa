@@ -1,4 +1,4 @@
-package com.centaurusa;
+package com.centaurusa.notedetial;
 
 import android.content.Context;
 import android.content.res.Resources;

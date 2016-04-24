@@ -1,4 +1,4 @@
-package com.centaurusa;
+package com.centaurusa.notedetial;
 
 import android.app.Activity;
 import android.os.Bundle;
