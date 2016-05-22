@@ -15,13 +15,13 @@ public class NoteDbHelper extends SQLiteOpenHelper {
     private static final String BOOLEAN_TYPE = " INTEGER";
     private static final String COMMA_SEP = ",";
     private static final String SQL_CREATE_ENTRYS = "CREATE TABLE" +
-                    NotePersistenceContract.NoteEntry.TABLE_NAME + "(" +
-                    NotePersistenceContract.NoteEntry._ID + TEXT_TYPE + "PRIMARY KEY" + COMMA_SEP +
-                    NotePersistenceContract.NoteEntry.COLUMN_NAME_ENTRY_ID + TEXT_TYPE + COMMA_SEP +
-                    NotePersistenceContract.NoteEntry.COLUMN_NAME_TITLE + TEXT_TYPE + COMMA_SEP +
-                    NotePersistenceContract.NoteEntry.COLUMN_NAME_DETIAL + TEXT_TYPE + COMMA_SEP +
-                    NotePersistenceContract.NoteEntry.COLUMN_NAME_CREATE_DATE + TEXT_TYPE + COMMA_SEP +
-                    NotePersistenceContract.NoteEntry.COLUMN_NAME_COMPLETED + BOOLEAN_TYPE + ")";
+                    NoteEntry.TABLE_NAME + "(" +
+                    NoteEntry._ID + TEXT_TYPE + "PRIMARY KEY" + COMMA_SEP +
+                    NoteEntry.COLUMN_NAME_ENTRY_ID + TEXT_TYPE + COMMA_SEP +
+                    NoteEntry.COLUMN_NAME_TITLE + TEXT_TYPE + COMMA_SEP +
+                    NoteEntry.COLUMN_NAME_DETIAL + TEXT_TYPE + COMMA_SEP +
+                    NoteEntry.COLUMN_NAME_CREATE_DATE + BOOLEAN_TYPE + COMMA_SEP +
+                    NoteEntry.COLUMN_NAME_COMPLETED + BOOLEAN_TYPE + ")";
 
     public NoteDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);

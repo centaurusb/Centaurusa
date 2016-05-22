@@ -58,7 +58,8 @@ public class NoteActivity extends AppCompatActivity {
         }
 
         //set the presenter
-       mNotePresenter = new NotePresenter(NoteDataRepository.getInstance(LocalNoteDataSource.getIntance()),
+       mNotePresenter = new NotePresenter(NoteDataRepository.getInstance(
+               LocalNoteDataSource.getIntance(getApplicationContext())),
                noteFragment);
     }
 

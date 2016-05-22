@@ -4,6 +4,8 @@ import android.support.annotation.NonNull;
 
 import com.centaurusa.base.NoteDataSource;
 
+import java.util.List;
+
 /**
  * Created by Swin on 2016/5/22.
  */
@@ -23,13 +25,18 @@ public class NoteDataRepository implements NoteDataSource {
         return INSTANCE;
     }
 
-    public static void destoryInstance(){
+    public static void destoryInstance() {
         INSTANCE = null;
     }
 
     @Override
-    public void getNotes(@NonNull LoadNotesCallback callback) {
-
+    public void getNotes(@NonNull final LoadNotesCallback callback) {
+        mLocalDataSource.getNotes(new LoadNotesCallback() {
+            @Override
+            public void onNotesLoaded(List<Note> notes) {
+              callback.onNotesLoaded(notes);
+            }
+        });
     }
 
     @Override

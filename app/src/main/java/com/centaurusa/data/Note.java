@@ -3,29 +3,30 @@ package com.centaurusa.data;
 import java.util.Date;
 import java.util.UUID;
 
+import java.text.SimpleDateFormat;
 /**
  * Created by Swin on 2016/5/22.
  */
 public class Note {
-    private String mNoteId;
+    private UUID mNoteId;
     private String mTitle;
     private String mDetial;
     private Date mDate;
     private boolean mComplete;
 
-    public Note(String title, String detial) {
-        mNoteId  = UUID.randomUUID().toString();
+    public Note(String noteId ,String title, String detial,Long date,boolean complete) {
+        mNoteId = UUID.fromString(noteId);
         mTitle = title;
         mDetial = detial;
-        mDate = new Date();
-        mComplete = false;
+        mDate = new Date(date);
+        mComplete = complete;
     }
 
-    public String getNoteId() {
+    public UUID getNoteId() {
         return mNoteId;
     }
 
-    public void setNoteId(String noteId) {
+    public void setNoteId(UUID noteId) {
         mNoteId = noteId;
     }
 

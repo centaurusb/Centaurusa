@@ -33,15 +33,25 @@ public class NoteFragment extends Fragment implements NoteContract.View{
     }
 
     @Override
+    public void onResume(){
+        super.onResume();
+        mPresenter.start();
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        TextView textView = new TextView(getActivity());
-        textView.setText(R.string.hello_blank_fragment);
-        return textView;
+      View rootView = inflater.inflate(R.layout.fragment_note,container,false);
+        return rootView;
     }
 
     @Override
     public void setPresenter(NoteContract.Presenter presenter){
         mPresenter = checkNotNull(presenter);
+    }
+
+    @Override
+    public void showNotes() {
+
     }
 }
