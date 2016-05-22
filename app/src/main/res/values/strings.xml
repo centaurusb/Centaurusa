@@ -4,7 +4,7 @@
 
     <string name="write_note">写便签</string>
     <string name="edit_text_hint">"请输入您要写的内容"</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_draw_open">navigation draw open</string>
+    <string name="navigation_draw_close">navigation draw close</string>
 </resources>

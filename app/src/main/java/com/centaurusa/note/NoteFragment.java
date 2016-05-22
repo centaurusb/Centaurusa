@@ -7,20 +7,30 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
+import static com.google.common.base.Preconditions.checkNotNull;
 import com.centaurusa.www.centaurusa.R;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class NoteFragment extends Fragment {
-
+public class NoteFragment extends Fragment implements NoteContract.View{
+    private static final String TAG = "NoteFragment";
+    private NoteContract.Presenter mPresenter ;
 
     public NoteFragment() {
-        // Required empty public constructor
+
     }
 
+    public static NoteFragment newInstance() {
+        NoteFragment noteFragment = new NoteFragment();
+        return noteFragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstance) {
+        super.onCreate(savedInstance);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -30,4 +40,8 @@ public class NoteFragment extends Fragment {
         return textView;
     }
 
+    @Override
+    public void setPresenter(NoteContract.Presenter presenter){
+        mPresenter = checkNotNull(presenter);
+    }
 }

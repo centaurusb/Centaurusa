@@ -9,41 +9,13 @@
     tools:context="com.centaurusa.note.NoteActivity"
     tools:openDrawer="start">
 
-    <LinearLayout
+    <include
+        layout="@layout/app_bar_note"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <android.support.design.widget.AppBarLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/note_toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="?attr/colorPrimary"
-                android:minHeight="?attr/actionBarSize">
-            </android.support.v7.widget.Toolbar>
-
-        </android.support.design.widget.AppBarLayout>
-
-        <android.support.design.widget.CoordinatorLayout
-            android:id="@+id/note_coordinator_layout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <FrameLayout
-                android:id="@+id/note_frame_layout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            </FrameLayout>
-
-        </android.support.design.widget.CoordinatorLayout>
-    </LinearLayout>
+        android:layout_height="match_parent"/>
 
     <android.support.design.widget.NavigationView
+        android:id="@+id/note_nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
