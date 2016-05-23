@@ -6,12 +6,10 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.annotation.NonNull;
-import android.widget.ListView;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
 import com.centaurusa.base.NoteDataSource;
-import com.centaurusa.notedetial.NoteEditText;
 
 import java.util.ArrayList;
 import java.util.List;

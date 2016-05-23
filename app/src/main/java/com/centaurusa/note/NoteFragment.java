@@ -8,7 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import static com.google.common.base.Preconditions.checkNotNull;
+
+import com.centaurusa.data.Note;
 import com.centaurusa.www.centaurusa.R;
+
+import java.util.List;
 
 
 /**
@@ -51,7 +55,7 @@ public class NoteFragment extends Fragment implements NoteContract.View{
     }
 
     @Override
-    public void showNotes() {
+    public void showNotes(List<Note> notes) {
 
     }
 }
